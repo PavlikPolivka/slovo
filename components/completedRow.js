@@ -1,4 +1,4 @@
-import { Cell } from "./Cell";
+import { Cell } from "./cell";
 import { getGuessStatuses } from '../lib/statuses';
 
 export const CompletedRow = ({ guess }) => {

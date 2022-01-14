@@ -1,4 +1,4 @@
-import { MiniCell } from "./MiniCell";
+import { MiniCell } from "./miniCell";
 import { getGuessStatuses } from '../lib/statuses';
 
 export const MiniCompletedRow = ({ guess }) => {

@@ -1,4 +1,4 @@
-import { Key } from "./Key";
+import { Key } from "./key";
 import { getStatuses } from '../lib/statuses';
 
 
