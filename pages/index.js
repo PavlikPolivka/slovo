@@ -1,6 +1,6 @@
 import { InformationCircleIcon } from "@heroicons/react/outline";
 import { useState, useEffect } from "react";
-import { InfoModal } from "../components/infoModal";
+import { InfoModal } from "../components/InfoModal";
 import { WinModal } from "../components/winModal";
 import { Alert } from "../components/alert";
 import Grid from "../components/grid";
