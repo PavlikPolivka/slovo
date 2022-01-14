@@ -1,6 +1,6 @@
-import { CompletedRow } from "./CompletedRow";
-import { CurrentRow } from "./CurrentRow";
-import { EmptyRow } from "./EmptyRow";
+import { CompletedRow } from "./completedRow";
+import { CurrentRow } from "./currentRow";
+import { EmptyRow } from "./emptyRow";
 
 
 export default function Grid({ guesses, currentGuess }) {
