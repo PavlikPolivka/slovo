@@ -68,7 +68,7 @@ export default function Home() {
     <div className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
     <Alert message="Slovo není ve slovníku" isOpen={isWordNotFoundAlertOpen} />
     <Alert
-      message={`Prohráli jste, slovo bylo: ${solution}`}
+      message={`Prohráli jste, slovo bylo: ${solution}. Nové slovo zase zítra.`}
       isOpen={isGameLost}
     />
     <div className="flex w-80 mx-auto items-center mb-8">

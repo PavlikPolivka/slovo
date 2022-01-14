@@ -58,7 +58,7 @@ export const WinModal = ({ isOpen, handleClose, guesses }) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <MiniGrid guesses={guesses} />
-                    <p className="text-sm text-gray-500">Skvělá práce!</p>
+                    <p className="text-sm text-gray-500">Skvělá práce! - Nové slovo zase zítra.</p>
                   </div>
                 </div>
               </div>
