@@ -19,6 +19,14 @@ export default function Keyboard({ onChar, onDelete, onEnter, guesses }) {
   return (
     <div>
       <div className="flex justify-center mb-1">
+        <Key value="Ů" onClick={onClick} status={charStatuses["Ů"]} />
+        <Key value="Ú" onClick={onClick} status={charStatuses["Ú"]} />
+        <Key value="Ď" onClick={onClick} status={charStatuses["Ď"]} />
+        <Key value="Ť" onClick={onClick} status={charStatuses["Ť"]} />
+        <Key value="Ň" onClick={onClick} status={charStatuses["Ň"]} />
+        <Key value="Ó" onClick={onClick} status={charStatuses["Ó"]} />
+      </div>
+      <div className="flex justify-center mb-1">
         <Key value="Ě" onClick={onClick} status={charStatuses["Ě"]} />
         <Key value="Š" onClick={onClick} status={charStatuses["Š"]} />
         <Key value="Č" onClick={onClick} status={charStatuses["Č"]} />
@@ -28,7 +36,6 @@ export default function Keyboard({ onChar, onDelete, onEnter, guesses }) {
         <Key value="Á" onClick={onClick} status={charStatuses["Á"]} />
         <Key value="Í" onClick={onClick} status={charStatuses["Í"]} />
         <Key value="É" onClick={onClick} status={charStatuses["É"]} />
-        <Key value="Ů" onClick={onClick} status={charStatuses["Ů"]} />
       </div>
       <div className="flex justify-center mb-1">
         <Key value="Q" onClick={onClick} status={charStatuses["Q"]} />
@@ -52,7 +59,6 @@ export default function Keyboard({ onChar, onDelete, onEnter, guesses }) {
         <Key value="J" onClick={onClick} status={charStatuses["J"]} />
         <Key value="K" onClick={onClick} status={charStatuses["K"]} />
         <Key value="L" onClick={onClick} status={charStatuses["L"]} />
-        <Key value="Ú" onClick={onClick} status={charStatuses["Ú"]} />
       </div>
       <div className="flex justify-center">
         <Key width={65.4} value="ENTER" onClick={onClick}>
