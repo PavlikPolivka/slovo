@@ -4,6 +4,7 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   return <>
     <Head>
+      <title>Slovo</title>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-PTKKB6EMQV"></script>
       <script
           dangerouslySetInnerHTML={{
