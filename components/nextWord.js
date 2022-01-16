@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Countdown from 'react-countdown';
 import { nextDate } from '../lib/words';
 
@@ -14,7 +13,7 @@ export const NextWord = () => {
         return <Completionist />;
     } else {
         // Render a countdown
-        return <span> {hours} h {minutes} min {seconds} sec</span>;
+        return <span> {minutes} min {seconds} sec</span>;
     }
     };
 
