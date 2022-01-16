@@ -51,7 +51,7 @@ export const InfoModal = ({ isOpen, handleClose }) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Uhodněte SLOVO během 6 pokusů. Po každém pokusu se změní barva políček s informací jak blízko jste výsledku.
+                      Uhodněte SLOVO během šesti pokusů. Po každém pokusu se změní barva políček s informací, jak blízko, jste výsledku.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -62,7 +62,7 @@ export const InfoModal = ({ isOpen, handleClose }) => {
                       <Cell value="O" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      Písmeno S je ve slově a na správné pozici.
+                      Písmeno S je ve slově na správné pozici.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -84,7 +84,7 @@ export const InfoModal = ({ isOpen, handleClose }) => {
                       <Cell value="O" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      Písmeno V vůbec není ve slově.
+                      Písmeno V není ve slově vůbec.
                     </p>
                   </div>
                 </div>
