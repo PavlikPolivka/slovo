@@ -33,7 +33,7 @@ export default function Home() {
     data = JSON.parse(data);
     if (data && data.seed === seed) {
       setGuesses(data.guesses);
-      if (isWinningWord(data.guesses.at(-1))) {
+      if (isWinningWord(data.guesses[data.guesses - 1])) {
         setIsGameWon(true)
       } else {
         if (data.guesses.length >= 5) {
