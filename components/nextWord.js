@@ -13,13 +13,12 @@ export const NextWord = () => {
         return <Completionist />;
     } else {
         // Render a countdown
-        return <span> {minutes} min {seconds} sec</span>;
+        return <span>Nové slovo za: {minutes} min {seconds} sec</span>;
     }
     };
 
     return (
         <span>
-            Nové slovo za: 
                 <Countdown
             date={nextDate()}
             renderer={renderer}
