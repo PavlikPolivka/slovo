@@ -44,13 +44,13 @@ export default function Home() {
       }
     }
 
-    setLoading(false);
     if (isGameWon) {
       setIsWinModalOpen(true);
     }
     if (isGameLost) {
       setIsLostModalOpen(true);
     }
+    setLoading(false);
   }, [isGameWon, isGameLost]);
 
   const onChar = (value) => {
