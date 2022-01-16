@@ -3,6 +3,7 @@ import { MiniGrid } from './miniGrid';
 import { Dialog, Transition } from "@headlessui/react";
 import { BanIcon } from "@heroicons/react/outline";
 import { NextWord } from "./nextWord";
+import { solution } from "../lib/words";
 
 
 export const LostModal = ({ isOpen, handleClose, guesses }) => {
@@ -59,20 +60,17 @@ export const LostModal = ({ isOpen, handleClose, guesses }) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <MiniGrid guesses={guesses} />
-                    <p className="text-sm text-gray-500">Nové slovo za:</p>
-                    <p>
-                      <NextWord/>
-                    </p>
+                    <p className="text-sm text-gray-500">Slovo bylo: {solution}</p>
                   </div>
                 </div>
               </div>
               <div className="mt-5 sm:mt-6">
-                <button
+              <button
                   type="button"
                   className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
                   onClick={handleClose}
                 >
-                  Ukončit
+                  <NextWord/>
                 </button>
               </div>
             </div>

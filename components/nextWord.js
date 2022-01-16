@@ -5,7 +5,7 @@ import { nextDate } from '../lib/words';
 export const NextWord = () => {
 
     // Random component
-    const Completionist = () => <span><Link href="/">Hrej</Link></span>;
+    const Completionist = () => <span>Další slovo</span>;
 
     // Renderer callback with condition
     const renderer = ({ hours, minutes, seconds, completed }) => {
@@ -14,15 +14,19 @@ export const NextWord = () => {
         return <Completionist />;
     } else {
         // Render a countdown
-        return <span>{hours}:{minutes}:{seconds}</span>;
+        return <span> {hours} h {minutes} min {seconds} sec</span>;
     }
     };
 
     return (
-        <Countdown
+        <span>
+            Nové slovo za: 
+                <Countdown
             date={nextDate()}
             renderer={renderer}
         />
+        </span>
+
     );
 
 }

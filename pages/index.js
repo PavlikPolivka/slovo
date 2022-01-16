@@ -29,11 +29,13 @@ export default function Home() {
   useEffect(() => {
     
     const seed = generateSeed();
+    console.log("d")
     let data = localStorage.getItem('data');
     data = JSON.parse(data);
     if (data && data.seed === seed) {
       setGuesses(data.guesses);
-      if (isWinningWord(data.guesses[data.guesses - 1])) {
+
+      if (isWinningWord(data.guesses[data.guesses.length - 1])) {
         setIsGameWon(true)
       } else {
         if (data.guesses.length >= 5) {
@@ -116,12 +118,12 @@ export default function Home() {
     />
     <LostModal
       isOpen={isLostModalOpen}
-      handleClose={() => setIsLostModalOpen(false)}
+      handleClose={() => window.location.reload()}
       guesses={guesses}
     />
     <WinModal
       isOpen={isWinModalOpen}
-      handleClose={() => setIsWinModalOpen(false)}
+      handleClose={() => window.location.reload()}
       guesses={guesses}
     />
     <InfoModal

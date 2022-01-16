@@ -59,10 +59,7 @@ export const WinModal = ({ isOpen, handleClose, guesses }) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <MiniGrid guesses={guesses} />
-                    <p className="text-sm text-gray-500">Skvělá práce! - Nové slovo za:</p>
-                    <p>
-                      <NextWord/>
-                    </p>
+                    <p className="text-sm text-gray-500">Skvělá práce!</p>
                   </div>
                 </div>
               </div>
@@ -72,7 +69,7 @@ export const WinModal = ({ isOpen, handleClose, guesses }) => {
                   className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
                   onClick={handleClose}
                 >
-                  Ukončit
+                  <NextWord/>
                 </button>
               </div>
             </div>
